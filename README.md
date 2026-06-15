@@ -1,3 +1,4 @@
+![Water Potability Banner](./images/image_gen_269f9392-6188-4707-aed6-99847900d04e_0.png)
 # water-potability-classification
 Predicting water potability using Random Forest &amp; XGBoost. Features advanced preprocessing with KNNImputer and Threshold Optimization.
 
