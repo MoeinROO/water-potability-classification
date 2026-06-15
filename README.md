@@ -15,23 +15,27 @@ Libraries: Pandas, NumPy, Scikit-Learn, XGBoost, Seaborn, Matplotlib
 Data Inspection: Analyzed data dimensions, types, and missing values.
 Visualization: Used Scatter Plots (Hardness vs. Solids) and Correlation Matrices to find patterns.
 Class Balance: Evaluated the potability distribution (Balanced/Imbalanced analysis).
-2. Advanced Preprocessing
+
+3. Advanced Preprocessing
 Handling Missing Values: Instead of simple mean-imputation, I used KNNImputer (n_neighbors=5) for more accurate data recovery.
 Normalization: Applied StandardScaler to normalize features.
 Distribution Analysis: Used KDE Plots to compare feature distributions (specifically Sulfate) before and after imputation.
-3. Machine Learning Modeling
-I implemented and compared two powerful ensemble models:
 
+4. Machine Learning Modeling
+I implemented and compared two powerful ensemble models:
 Random Forest Classifier
 XGBoost Classifier
-4. Optimization & Fine-tuning
+
+5. Optimization & Fine-tuning
 Class Balancing: Addressed data imbalance to ensure the model doesn’t favor the majority class.
 Hyperparameter Tuning: Used GridSearchCV to find the optimal parameters for both models.
 Threshold Adjustment: Fine-tuned the decision threshold to minimize the probability of classifying unsafe water as potable (Safety First!).
+
 📊 Results
-Random Forest Accuracy: …%
-XGBoost Accuracy: …%
+Random Forest Accuracy: 0.6646341463414634
+XGBoost Accuracy: 0.6310975609756098
 Detailed Confusion Matrix and Classification Reports are available in the notebook.
+
 📁 Project Structure
 notebooks/: Contains the Jupyter Notebook with step-by-step implementation.
 data/: The dataset used for training.
